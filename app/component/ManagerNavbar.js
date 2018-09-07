@@ -23,10 +23,10 @@ export default class ManagerNavbar extends React.Component {
                             <li className="active">
                                 <Link to="/">查看所有人员信息</Link>
                             </li>
-                            <li>
+                            <li className="hide">
                                 <Link to="/add">人员新增</Link>
                             </li>
-                            <li>
+                            <li className="hide">
                                 <Link to="/update">人员修改</Link>
                             </li>
                         </ul>
