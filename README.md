@@ -2,7 +2,7 @@
 
 最近刚开始学的react + webpack + react-router v4
 
-开发工具准备好：npm + react + webpack + react-router + vscode(编写工具)
+开发工具准备好：npm + react + webpack + react-router + vscode(编写工具) + boorstrap(页面渲染框架)
 
 用npm（一个包管理工具，其中有不少基于node的插件，功能极其强大）安装webpack,我们需要node-npm来安装和运行webpack，关于node和npm不懂得同学请百度。
 
