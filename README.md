@@ -1,4 +1,4 @@
-# ReactWebpackDemo
+# react + webpack + react-router v4
 
 最近刚开始学的react + webpack + react-router v4
 
