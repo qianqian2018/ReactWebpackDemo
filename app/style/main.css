@@ -1,0 +1,18 @@
+body{
+    padding-top: 70px;
+}
+
+.panel-manager .panel-body{
+    padding: 5px;
+}
+
+.form-horizontal {
+    max-width: 480px;
+}
+
+@media (min-width: 34em){
+    select.form-control {
+        width: 100%;
+        max-width: 100%;
+    }
+}

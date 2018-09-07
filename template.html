@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>人员管理系统</title>
+
+        <!-- Bootstrap -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="app/style/main.css">
+    </head>
+
+    <body>
+        <div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap theme</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">查看所有人员信息</a>
+                        </li>
+                        <li>
+                            <a href="#about">人员新增</a>
+                        </li>
+                        <li>
+                            <a href="#contact">人员修改</a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="panel panel-default panel-manager">
+                <div class="panel-body">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="selectManager">人员筛选</label>
+                            <select class="form-control" name="" id="">
+                                <option value="">aaaa</option>
+                                <option value="">aaaa</option>
+                                <option value="">aaaa</option>
+                            </select>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="sortManager">排列方式</label>
+                            <select class="form-control" name="" id="">
+                                <option value="">aaaa</option>
+                                <option value="">aaaa</option>
+                                <option value="">aaaa</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>姓名</th>
+                            <th>年龄</th>
+                            <th>身份</th>
+                            <th>性别</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>张三</td>
+                            <td>20</td>
+                            <td>主任</td>
+                            <td>男</td>
+                            <td>
+                                <a href="#">操作</a>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>张三</td>
+                            <td>20</td>
+                            <td>主任</td>
+                            <td>男</td>
+                            <td>
+                                <a href="#">操作</a>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>张三</td>
+                            <td>20</td>
+                            <td>主任</td>
+                            <td>男</td>
+                            <td>
+                                <a href="#">操作</a>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel panel-default panel-add">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">姓名</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" placeholder="your name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="col-sm-2 control-label">年龄</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="age" placeholder="your age(0-150)">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sex" class="col-sm-2 control-label">性别</label>
+                            <div class="col-sm-10">
+                                <select name="sex" id="sex" class="form-control">
+                                    <option value="0">男</option>
+                                    <option value="1">女</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="id" class="col-sm-2 control-label">身份</label>
+                            <div class="col-sm-10">
+                                <select name="id" id="id" class="form-control">
+                                    <option value="1">主任</option>
+                                    <option value="2">老师</option>
+                                    <option value="3">学生</option>
+                                    <option value="4">实习</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descrip" class="col-sm-2 control-label">个人描述</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" name="descrip" id="descrip"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </body>
+</html>
